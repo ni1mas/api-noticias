@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask
+from flask import jsonify
 from eventregistry import *
 from datetime import datetime
 app = Flask(__name__)
