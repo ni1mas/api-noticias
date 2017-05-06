@@ -12,12 +12,7 @@ def receiveNews():
 
 @app.route('/')
 def hello_world():
-  return 'Hello, Azure!'
-
-@app.route("/get-news")
-def getNews():
-    return jsonify(receiveNews())
-    
+  return jsonify(receiveNews())    
 
 
 if __name__ == '__main__':
