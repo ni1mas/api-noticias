@@ -17,7 +17,7 @@ res = receiveNews()
 def hello_world():
   global last_date, res
   current_date = datetime.now()
-  if (current_date - last_date).total_seconds() > 30:
+  if (current_date - last_date).total_seconds() > 60*60:
     last_date = current_date
     res = receiveNews()
   return jsonify(res)
