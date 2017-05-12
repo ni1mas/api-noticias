@@ -49,7 +49,7 @@ def crossdomain(origin=None, methods=None, headers=None,
 def receiveNews():
     er = EventRegistry(apiKey = "7f142189-e6b0-43b0-b66e-f2850b866caf")
     q = QueryArticles(conceptUri = er.getConceptUri("Violencia de género"))
-    q.addRequestedResult(RequestArticlesInfo(returnInfo = ReturnInfo(articleInfo = ArticleInfoFlags(bodyLen = -1, image = True))))
+    q.addRequestedResult(RequestArticlesInfo(returnInfo = ReturnInfo(articleInfo = ArticleInfoFlags(bodyLen = -1, image = True, location = True))))
     return er.execQuery(q)
 
 last_date = datetime.now()
