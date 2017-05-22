@@ -1,11 +1,7 @@
-# Python Flask app on Azure App Service Web
+# API de noticias para Ni Una Más
 
-This is a minimal sample app that demonstrates how to run a Python Flask application on Azure App Service Web.
+Esta API consume los servicios de EventRegistry para buscar aquellas noticias relacionadas con la violencia de género.
 
-This repository can directly be deployed to Azure App Service.
+Las noticias se actualizan cada media hora. De esta forma, EventRegistry no nos bloquea por sobrecarga de peticiones.
 
-For more information, please see the [Python on App Service Quickstart docs](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-get-started-python).
 
-# Contributing
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
